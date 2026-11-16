@@ -1,0 +1,26 @@
+2026-11-16 13:14:37 | INFO | === INICIO DEL SISTEMA INTEGRAL SOFTWARE FJ (MODO MEMORIA) ===
+2026-11-16 13:14:37 | INFO | Cliente registrado correctamente: Laura Martínez (ID: CLI-01)
+2026-11-16 13:14:37 | INFO | Auditoría registro cliente [CLI-01] finalizada. Total clientes: 1
+2026-11-16 13:14:37 | INFO | Cliente registrado correctamente: Carlos Gómez (ID: CLI-02)
+2026-11-16 13:14:37 | INFO | Auditoría registro cliente [CLI-02] finalizada. Total clientes: 2
+2026-11-16 13:14:37 | ERROR | Fallo al registrar cliente: [ERR-DATO-001] (2026-11-16 13:14:37) -> Documento inválido ('123'): debe contener solo números (mínimo 6 dígitos).
+2026-11-16 13:14:37 | INFO | Auditoría registro cliente [CLI-03] finalizada. Total clientes: 2
+2026-11-16 13:14:37 | ERROR | Fallo al registrar cliente: [ERR-DATO-001] (2026-11-16 13:14:37) -> Ya existe un cliente registrado con ID 'CLI-04' o documento '1045678912'.
+2026-11-16 13:14:37 | INFO | Auditoría registro cliente [CLI-04] finalizada. Total clientes: 2
+2026-11-16 13:14:37 | INFO | Servicio creado -> Sala: Sala Ejecutiva Norte (Capacidad: 15 personas)
+2026-11-16 13:14:37 | INFO | Servicio creado -> Equipo: Workstation Ryzen 7 (Stock: 1 unidades)
+2026-11-16 13:14:37 | INFO | Servicio creado -> Asesoría: Arquitectura Cloud AWS (Área: Cloud & DevOps)
+2026-11-16 13:14:37 | ERROR | Fallo controlado al instanciar servicio inválido: [ERR-CALC-005] (2026-11-16 13:14:37) -> La tarifa base (-50000.0) debe ser mayor a cero.
+2026-11-16 13:14:37 | INFO | Reserva [RES-101] CONFIRMADA | Cliente: Laura Martínez | Servicio: Sala Ejecutiva Norte | Total: $396,270.00
+2026-11-16 13:14:37 | INFO | Cierre de transacción reserva [RES-101]. Reservas activas: 1
+2026-11-16 13:14:37 | INFO | Reserva [RES-102] CONFIRMADA | Cliente: Carlos Gómez | Servicio: Workstation Ryzen 7 | Total: $285,600.00
+2026-11-16 13:14:37 | INFO | Cierre de transacción reserva [RES-102]. Reservas activas: 2
+2026-11-16 13:14:37 | ERROR | Fallo en operación de reserva [RES-103]: [ERR-RES-004] (2026-11-16 13:14:37) -> No se pudo procesar la reserva [RES-103] para 'Workstation Ryzen 7'. | Causa raíz: [ERR-SERV-003] (2026-11-16 13:14:37) -> El equipo 'Workstation Ryzen 7' está agotado o inactivo.
+2026-11-16 13:14:37 | INFO | Cierre de transacción reserva [RES-103]. Reservas activas: 2
+2026-11-16 13:14:37 | ERROR | Fallo en operación de reserva [RES-104]: [ERR-RES-004] (2026-11-16 13:14:37) -> No se pudo procesar la reserva [RES-104] para 'Arquitectura Cloud AWS'. | Causa raíz: [ERR-DATO-001] (2026-11-16 13:14:37) -> Duración inválida (1h): las asesorías requieren mínimo 2 horas.
+2026-11-16 13:14:37 | INFO | Cierre de transacción reserva [RES-104]. Reservas activas: 2
+2026-11-16 13:14:37 | INFO | Reserva [RES-105] CONFIRMADA | Cliente: Laura Martínez | Servicio: Arquitectura Cloud AWS | Total: $535,500.00
+2026-11-16 13:14:37 | INFO | Cierre de transacción reserva [RES-105]. Reservas activas: 3
+2026-11-16 13:14:37 | WARNING | Reserva [RES-102] CANCELADA por solicitud del cliente Carlos Gómez.
+2026-11-16 13:14:37 | ERROR | Control de doble cancelación exitoso: [ERR-RES-004] (2026-11-16 13:14:37) -> Operación no permitida: la reserva [RES-102] ya fue CANCELADA.
+2026-11-16 13:14:37 | INFO | === FIN DE LA SIMULACIÓN - SISTEMA ESTABLE Y SIN INTERRUPCIONES ===
